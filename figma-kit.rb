@@ -11,7 +11,7 @@ class FigmaKit < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/dop-amine/figma-kit/releases/download/v0.4.0/figma-kit_0.4.0_darwin_amd64.tar.gz"
-      sha256 "8d310265d422083ec9672c04b2a7d72d8d82bf67a4ba0d935398ed5c8669bbd2"
+      sha256 "982adb9f74741b99d98070440aebdc637c06bda01311165245d4930d22d66bc8"
 
       define_method(:install) do
         bin.install "figma-kit"
@@ -19,7 +19,7 @@ class FigmaKit < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/dop-amine/figma-kit/releases/download/v0.4.0/figma-kit_0.4.0_darwin_arm64.tar.gz"
-      sha256 "27693e6b9cd32c3e42d300a0e58bb3d02c4ac87cbfc7fef97cc52a4f6eaf6d75"
+      sha256 "8aaa546658088eddf4f733944336e57edcebaf309c21c4ba51400408742fabaa"
 
       define_method(:install) do
         bin.install "figma-kit"
@@ -30,14 +30,14 @@ class FigmaKit < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/dop-amine/figma-kit/releases/download/v0.4.0/figma-kit_0.4.0_linux_amd64.tar.gz"
-      sha256 "cd7dc6804d58c6a2424672a283a3ec40f1f943dbe73b43d663cb8c16d2a98136"
+      sha256 "ae062b343854f7b20979f9f684945c42b7b5645e96405d64d9457c7a4753c50f"
       define_method(:install) do
         bin.install "figma-kit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/dop-amine/figma-kit/releases/download/v0.4.0/figma-kit_0.4.0_linux_arm64.tar.gz"
-      sha256 "1b5a5f7f9a8e44354a0271ffdff5a547104ee1044df1507c7bcd689d8f4b9aeb"
+      sha256 "dd0524c933564ff2d3fad9ecac53ab023ff8b0243d79b1e438853f146f2417f5"
       define_method(:install) do
         bin.install "figma-kit"
       end

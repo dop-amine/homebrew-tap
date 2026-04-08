@@ -5,21 +5,21 @@
 class FigmaKit < Formula
   desc "CLI for programmatic Figma design via the MCP server"
   homepage "https://github.com/dop-amine/figma-kit"
-  version "2.0.0"
+  version "2.1.0"
   license "BSL-1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dop-amine/figma-kit/releases/download/v2.0.0/figma-kit_2.0.0_darwin_amd64.tar.gz"
-      sha256 "664204b349b423b9d45a31e78d456f158c114f8e13094ce25994cc6cd89f2cbc"
+      url "https://github.com/dop-amine/figma-kit/releases/download/v2.1.0/figma-kit_2.1.0_darwin_amd64.tar.gz"
+      sha256 "c73396b900888ee5936e928721cc0bd1b04d2df998f0f8f749d7e55951cf7f5b"
 
       define_method(:install) do
         bin.install "figma-kit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dop-amine/figma-kit/releases/download/v2.0.0/figma-kit_2.0.0_darwin_arm64.tar.gz"
-      sha256 "ec14b2ba503b77fc961f0afb9f888b0d9099f31e28788f1ae60c5ddb5fad2462"
+      url "https://github.com/dop-amine/figma-kit/releases/download/v2.1.0/figma-kit_2.1.0_darwin_arm64.tar.gz"
+      sha256 "8353d7e0c3a9f9e981e6ffc00d170ee18bac62ada4e51451f9960c6906296906"
 
       define_method(:install) do
         bin.install "figma-kit"
@@ -29,15 +29,15 @@ class FigmaKit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dop-amine/figma-kit/releases/download/v2.0.0/figma-kit_2.0.0_linux_amd64.tar.gz"
-      sha256 "737edc46a56e79994a02de24bde23fb1e880963a98be47802ae4b15be1823710"
+      url "https://github.com/dop-amine/figma-kit/releases/download/v2.1.0/figma-kit_2.1.0_linux_amd64.tar.gz"
+      sha256 "f9fdaae1329fe9bfaacad6a53dd074cbb212efd175b0858f9f89bd27516b7b8e"
       define_method(:install) do
         bin.install "figma-kit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dop-amine/figma-kit/releases/download/v2.0.0/figma-kit_2.0.0_linux_arm64.tar.gz"
-      sha256 "9bd53455971ce78ad6391debf9709ae980a24e87b2e00576293f4041105ba83f"
+      url "https://github.com/dop-amine/figma-kit/releases/download/v2.1.0/figma-kit_2.1.0_linux_arm64.tar.gz"
+      sha256 "a7e9b95d20543502dc089f516b1d436c1380d04df4ee0b3184d032928f78ef51"
       define_method(:install) do
         bin.install "figma-kit"
       end

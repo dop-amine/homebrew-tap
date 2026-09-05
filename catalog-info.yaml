@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: homebrew-tap
+  title: Homebrew Tap
+  description: >-
+    Public Homebrew tap for dop-amine tools — currently carries figma-kit's
+    formula. macos-setup's Brewfile taps it (dop-amine/tap), but no formula
+    from it is installed today, which is why this is deprecated rather than
+    production.
+  annotations:
+    github.com/project-slug: dop-amine/homebrew-tap
+    dop-amine.com/tier: '3'
+spec:
+  type: library
+  lifecycle: deprecated
+  owner: dop-amine
